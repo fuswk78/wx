@@ -1,0 +1,126 @@
+.isHide {
+    display: none;
+}
+
+.product-img {
+    position: absolute;
+    left: 40rpx;
+    top: -120rpx;
+    width: 180rpx;
+    height: 180rpx;
+    z-index: 20;
+    border: 1px solid #ddd;
+    border-radius: 10rpx;
+}
+
+.mask {
+    background: #000;
+    height: 1500rpx;
+    width: 100%;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.pop {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    font-size: 26rpx;
+}
+
+.pop-title {
+    padding: 5rpx 0 7rpx;
+    overflow: hidden
+}
+
+.close {
+    float: right;
+    margin-top: 5rpx;
+}
+
+.pop-main {
+    width: 100%;
+    margin-top: 20rpx;
+}
+
+.buy-amount-head {
+    float: left;
+    line-height: 50rpx;
+    margin-left: 20rpx;
+    margin-bottom: 50rpx;
+}
+
+.amount-group {
+    float: right;
+    width: 80%;
+}
+
+.operate-button {
+    float: left;
+    border: 1px solid #ddd;
+    height: 53rpx;
+    font-size: 30rpx;
+    width: 60rpx;
+    text-align: center;
+    line-height: 53rpx;
+}
+
+.minus {
+    margin-left: 180rpx;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.plus {
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.buy-amount {
+    float: left;
+    background: #fff;
+    text-align: center;
+    width: 40%;
+    border: 1px solid #ddd;
+}
+
+.ten-remind {
+    display: none;
+    clear: both;
+    color: #f02a43;
+    margin: 20rpx;
+}
+
+.tenShow {
+    display: block;
+}
+
+.btn-group {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    padding: 10rpx 0;
+}
+
+.count1, .count2 {
+    margin-left: 10rpx;
+}
+
+.count2 {
+    color: #f02a43;
+}
+
+.btn-group .btn-join {
+    float: right;
+    width: 20%;
+    background: #f02a43;
+    text-align: center;
+    color: #fff;
+    padding: 10rpx;
+    border-radius: 10rpx;
+    margin-right: 20rpx;
+}

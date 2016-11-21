@@ -1,0 +1,55 @@
+<!--category.wxml-->
+<view class="container">
+    <view class="swiper">
+        <swiper indicator-dots="true" autoplay="true" interval="2500" duration="1000">
+            <swiper-item class="swiperItem">
+                <image class="swiperPic" src="../../../images/indexPic/index_1.jpg" />
+            </swiper-item>
+            <swiper-item class="swiperItem">
+                <image bindtap="joinJump2" data-id="p6" class="swiperPic" src="../../../images/indexPic/index_2.jpg" />
+            </swiper-item>
+            <swiper-item class="swiperItem">
+                <image bindtap="joinJump2" data-id="p12" class="swiperPic" src="../../../images/indexPic/index_3.jpg" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="productLists">
+        <view class="tab">
+            <view bindtap="tabSwitch" class="tabs {{currentTab === '1' ? 'active' : ''}}" data-index="1">苹果专场</view>
+            <view bindtap="tabSwitch" class="tabs {{currentTab === '2' ? 'active' : ''}}" data-index="2">充值卡</view>
+            <view bindtap="tabSwitch" class="tabs {{currentTab === '3' ? 'active' : ''}}" data-index="3">其他物品</view>
+        </view>
+        <view class="left">
+            <scroll-view scroll-y="true" animation="{{animationData1}}" class="hide {{currentTab === '1' ? 'show' : ''}}">
+                <view class="product" wx:for="{{aProductList}}">
+                    <image class="productPic" src="{{item.src}}" />
+                    <text class="productName">{{item.name}}</text>
+                    <view>
+                        <progress class="progress" percent="{{item.pro}}" active />
+                        <navigator bindtap="joinJump" url="{{item.url}}" class="join" id="{{item.id}}">立即参与</navigator>
+                    </view>
+                </view>
+            </scroll-view>
+            <scroll-view scroll-y="true" animation="{{animationData2}}" class="hide {{currentTab === '2' ? 'show' : ''}}">
+                <view class="product" wx:for="{{cProductList}}">
+                    <image class="productPic" src="{{item.src}}" />
+                    <text class="productName">{{item.name}}</text>
+                    <view>
+                        <progress class="progress" percent="{{item.pro}}" active />
+                        <navigator bindtap="joinJump" url="{{item.url}}" class="join" id="{{item.id}}">立即参与</navigator>
+                    </view>
+                </view>
+            </scroll-view>
+            <scroll-view scroll-y="true" animation="{{animationData3}}" class="hide {{currentTab === '3' ? 'show' : ''}}">
+                <view class="product" wx:for="{{oProductList}}">
+                    <image class="productPic" src="{{item.src}}" />
+                    <text class="productName">{{item.name}}</text>
+                    <view>
+                        <progress class="progress" percent="{{item.pro}}" active />
+                        <navigator bindtap="joinJump" url="{{item.url}}" class="join" id="{{item.id}}">立即参与</navigator>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

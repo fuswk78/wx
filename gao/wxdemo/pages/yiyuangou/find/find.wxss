@@ -1,0 +1,18 @@
+.link {
+    font-size: 30rpx;
+    width: 100%;
+    padding: 30rpx 0;
+    border-bottom: 1px solid #ddd;
+    line-height: 60rpx;
+}
+
+.icons, .iconGO {
+    width: 60rpx;
+    height: 60rpx;
+    float: left;
+    margin: 0 10rpx;
+}
+
+.iconGO {
+    float: right;
+}

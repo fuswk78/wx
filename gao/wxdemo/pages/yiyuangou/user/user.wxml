@@ -1,0 +1,38 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="top">
+    <view  bindtap="bindViewTap" class="userinfo top-left">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="recharge"></view>
+    </view>
+  </view>
+  <view class="tab">
+    <view bindtap="tabSwitch" class="{{currentTab === '1' ? 'active' : ''}}" data-index="1">全部参与</view>
+    <view bindtap="tabSwitch" class="{{currentTab === '2' ? 'active' : ''}}" data-index="2">幸运记录</view>
+    <view bindtap="tabSwitch" class="{{currentTab === '3' ? 'active' : ''}}" data-index="3">晒单记录</view>
+  </view>
+  <view class="bottom">
+    <scroll-view class="hide {{currentTab === '1' ? 'show' : ''}}">
+      <view class="textGroup">
+        <text class="joinText">您还没有参与记录哦</text>
+        <text class="joinText">快来用1元收获惊喜吧</text>
+        <navigator url="../index/index" class="joinNow">马上去抢</navigator>
+      </view>
+    </scroll-view>
+    <scroll-view class="hide {{currentTab === '2' ? 'show' : ''}}">
+      <view class="textGroup">
+        <text class="joinText">您还没有幸运记录哦</text>
+        <text class="joinText">超高获得率商品等你来拿</text>
+        <navigator url="../index/index" class="joinNow">马上去抢</navigator>
+      </view>
+    </scroll-view>
+    <scroll-view class="hide {{currentTab === '3' ? 'show' : ''}}">
+      <view class="textGroup">
+        <text class="joinText">您还没有晒单记录哦</text>
+        <text class="joinText">快来用1元收获惊喜吧</text>
+        <navigator url="../index/index" class="joinNow">马上去抢</navigator>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<template name="buyPop">
+  <view class="mask {{isHide ? 'isHide' : ''}}"></view>
+  <view class="pop {{isHide ? 'isHide' : ''}}">
+    <view class="pop-title">
+        <icon type="cancel" class="close" color="#bbb" bindtap="close" />
+    </view>
+    <image class="product-img" src="{{src}}" />
+    <view class="pop-main">
+      <text class="buy-amount-head">参与人次</text>
+      <view class="amount-group">
+        <text class="operate-button minus" bindtap="minus">-</text>
+        <input class="buy-amount" value="{{count}}" type="number" bindblur="testCount"></input>
+        <text class="operate-button plus" bindtap="plus">+</text>
+      </view>
+      <view class="ten-remind {{isTen ? 'tenShow' : ''}}">参与人次必须是10的倍数</view>
+      <view class="btn-group">
+        <text class="count1">{{count}}欢乐豆</text>
+        <text class="count2">共{{count}}元</text>
+        <text class="btn-join" bindtap="buy">立即参与</text>     
+      </view>
+    </view>
+  </view>
+</template>

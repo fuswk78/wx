@@ -1,0 +1,35 @@
+<view class="container">
+    <image class="productPic" src="{{product.src}}" />
+    <text class="productName">{{product.name}}</text>
+    <view class="buyCount">
+        <progress class="productPro" percent="{{product.pro}}" />
+        <view class="userNeed">
+            <text>总需人次：</text>
+            <text class="needCount">{{product.need}}</text>
+        </view>
+        <view class="userLeft">
+            <text>剩余人次：</text>
+            <text class="leftCount">{{product.join}}</text>
+        </view>
+    </view>
+    <text class="message">您还没有参加，赶紧试试吧，万一中了呢？</text>
+    <view class="bottom">
+        <view class="link">
+            <text>图文详情</text><icon class="jump" type="info_circle" size="25" color="#aaa"/>
+        </view>
+        <view class="link">
+            <text>晒单分享</text><icon class="jump" type="info_circle" size="25" color="#aaa"/>
+        </view>
+        <view class="link">
+            <text>往期揭晓</text><icon class="jump" type="info_circle" size="25" color="#aaa"/>
+        </view>
+    </view>
+    <view class="buttonBottom">
+        <view class="joinNow">
+            <text class="button" data-src="{{product.src}}"  bindtap="buyJump">立即参与</text>
+        </view>
+    </view>
+
+    <import src="../common/buy/buy.wxml" />
+    <template is="buyPop" data="{{...buyData}}"></template>
+</view>

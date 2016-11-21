@@ -1,0 +1,109 @@
+/**index.wxss**/
+@import "../common/buy/buy.wxss";
+
+.container {
+  background: #ddd;
+}
+
+.refreshText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper {
+  display: block;
+  width: 100%;
+}
+
+.swiperPic {
+  width: 100%;
+  height: 150px;
+}
+
+.productLists {
+  width: 100%;
+}
+
+.tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  color: #000;
+  background: #fff;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab .active {
+  color: #f02a43;
+}
+
+.bottom {
+  background: #fff;
+  overflow: hidden;
+}
+
+.bottom .hide {
+  display: none
+}
+
+.bottom .show {
+  display: block;
+  height: 1057rpx;
+}
+
+.product {
+  float: left;
+  width: 48%;
+  padding: 0 0 10rpx 1.5%;
+  border-left: 1rpx solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+  height: 440rpx;
+}
+
+.productPic {
+  width: 100%;
+  height: 300rpx;
+}
+
+.productName {
+  font-size: 26rpx;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20rpx;
+}
+
+.progress {
+  width: 70%;
+  padding: 20rpx 0;
+  float: left;
+}
+.join {
+  float: left;
+  margin-top: 5rpx;
+  margin-left: 8%;
+  color: #f02a43;
+  font-size: 28rpx;
+  padding: 2rpx;
+  border: 1px solid #f02a43;
+}
+
+.tenIcon {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  top: 10rpx;
+  left: 10rpx;
+}

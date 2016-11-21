@@ -1,0 +1,74 @@
+.top {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: left
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  margin: 50rpx 0;
+  color: #000;
+  background: #fff;
+  padding: 10rpx 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab .active {
+  color: #f02a43;
+}
+
+.bottom .hide {
+  height: 200px;
+  display: none
+}
+
+.bottom .show {
+  display: block;
+}
+
+.textGroup {
+  margin-top: 100rpx;
+  color: #aaa
+}
+
+.textGroup .joinNow {
+  margin: 20rpx auto 0;
+  color: #f02a43;
+  font-size: 24rpx;
+  text-align: center;
+  display: block;
+  width: 200rpx;
+  padding: 10rpx 0;
+  border: 1px solid #f02a43;
+  border-radius: 3px;
+}
+
+.bottom .joinText {
+  display: block;
+  font-size: 24rpx;
+  text-align: center;
+}

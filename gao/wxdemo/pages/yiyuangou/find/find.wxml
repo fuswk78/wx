@@ -1,0 +1,28 @@
+<!--find.wxml-->
+<view class="container">
+    <navigator class="link" url="../products/products" bindtap="joinJump" id="p9">
+        <image class="icons" src="../../../images/icons/find-1.jpg" />
+        1元可得iPhone7
+        <image class="iconGO" src="../../../images/icons/find-6.jpg" />
+    </navigator>
+    <navigator class="link" url="../products/products" bindtap="joinJump" id="p7">
+        <image class="icons" src="../../../images/icons/find-2.jpg" />
+        人气爆款
+        <image class="iconGO" src="../../../images/icons/find-6.jpg" />
+    </navigator>
+    <navigator class="link">
+        <image class="icons" src="../../../images/icons/find-3.jpg" />
+        晒单分享
+        <image class="iconGO" src="../../../images/icons/find-6.jpg" />
+    </navigator>
+    <navigator class="link">
+        <image class="icons" src="../../../images/icons/find-5.jpg" />
+        帮助中心
+        <image class="iconGO" src="../../../images/icons/find-6.jpg" />
+    </navigator>
+    <navigator class="link">
+        <image class="icons" src="../../../images/icons/find-4.jpg" />
+        网易商城
+        <image class="iconGO" src="../../../images/icons/find-6.jpg" />
+    </navigator>
+</view>
